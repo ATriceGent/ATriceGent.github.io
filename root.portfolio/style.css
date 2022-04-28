@@ -1,0 +1,268 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #CD2F3E;
+}
+
+h1 {
+  font-family: acier-bat-solid,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  color: rgb(77, 77, 77);
+}
+
+/*Styling for main container*/
+.flex-container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  height: 100vh;
+}
+
+/*Fixed Image Column Styling*/
+.fixed {
+  background-image: url(portfolioImages/Alex_face.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  -webkit-flex: 0 0 40%;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
+}
+
+/*Content Styling Scroll*/
+.content {
+  overflow: auto;
+  flex: 0 0 60%;
+  background-color: #fff;
+}
+
+.content p {
+  font-family: futura-pt,sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: rgb(77, 77, 77);
+}
+
+/*Intro Content*/
+header {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Download Resume Button*/
+.resume {
+  border: none;
+  padding: 12px 32px;
+  font-size: 12px;
+  background-color: #ddd;
+  cursor: pointer;
+  text-align: center;
+}
+
+/*Resume btn hove effect*/
+.resume:hover {
+  background-color: rgb(207,45,62);
+  color: white;
+}
+
+/*Heading 2*/
+h2 {
+  margin-left: 20px;
+  font-family: acier-bat-solid,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  color: rgb(77, 77, 77);
+}
+
+/*Styling for the horizontal rule*/
+hr {
+  width: 95%;
+  border: .4px solid rgb(207,92,120);
+  margin-bottom: 30px;
+}
+
+/*Photo Gallery row styling*/
+.row-p {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+/*Photo Gallery column styling*/
+.column-p {
+  -webkit-flex: 50%;
+  -ms-flex: 50%;
+  flex: 50%;
+  padding: 0px 8px;
+}
+
+/*Photo Gallery img styling*/
+.column-p img {
+  width: 100%;
+  transition: transform .8s;
+}
+
+.column-p img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+  transform-origin: right;
+}
+
+.c1 img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+  transform-origin: left;
+}
+
+.logo {
+  padding-top: 33.69%;
+  padding-bottom: 33.69%;
+}
+
+/*ContentSpacer*/
+.spacer {
+  margin-top: 60px;
+}
+
+/*About Section*/
+.about {
+  padding: 12px 32px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 18px;
+  color: rgb(77, 77, 77);
+}
+
+.about span {
+  font-family: futura-pt,sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 18px;
+  color: rgb(207,92,120)
+}
+
+/*Skills Spacing*/
+.skills {
+  width: 95%;
+  margin-top: 50px;
+}
+
+/*Progress Bar styling*/
+.skills p {
+  letter-spacing: 4px;
+  font-family: futura-pt,sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+.photo, .webdev, .asuite {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.photoskill, .webskill, .adobeskill {
+  margin-left: 50px;
+  background-color: rgb(222,222,222);
+  width: 80%;
+  border-radius: 3px;
+}
+
+.photobar {
+  background-color: #CD2F3E;
+  padding: 1%;
+  text-align: right;
+  font-family: futura-pt,sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  border-radius: 3px;
+  width: 66%;
+  color: white;
+}
+.webbar {
+  background-color: #CD2F3E;
+  padding: 1%;
+  text-align: right;
+  font-family: futura-pt,sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  border-radius: 3px;
+  width: 85%;
+  color: white;
+}
+
+.adobebar {
+  background-color: #CD2F3E;
+  padding: 1%;
+  text-align: right;
+  font-family: futura-pt,sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  border-radius: 3px;
+  width: 90%;
+  color: white;
+}
+/*Progress Bar Styling End*/
+
+/*Accolade Styling*/
+.accolades {
+  height: 95px;
+  display: flex;
+  width: 90%;
+  background-color: #aaa;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.accolades p {
+  line-height: 25px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding-right: 15px;
+  color: white;
+  border-right: 1px solid #000;
+  font-family: futura-pt,sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.accolades p:last-child {
+  border-right: none;
+}
+
+.resume2 {
+  border: none;
+  padding: 12px 22px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  background-color: #ddd;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.resume2:hover {
+  background-color: rgb(207,45,62);
+  color: white;
+}

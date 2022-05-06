@@ -155,7 +155,7 @@ hr {
   font-weight: 500;
   font-style: italic;
   font-size: 18px;
-  color: rgb(77, 77, 77);
+  color: rgb(107, 107, 107);
 }
 
 .about span {
@@ -181,12 +181,12 @@ hr {
   margin-left: 20px;
 }
 
-.photo, .webdev, .asuite {
+.photo, .webdev, .asuite, .layout {
   margin-top: 40px;
   font-size: 20px;
 }
 
-.photoskill, .webskill, .adobeskill {
+.photoskill, .webskill, .adobeskill, .layoutskill {
   margin-left: 50px;
   background-color: rgb(222,222,222);
   width: 80%;
@@ -205,6 +205,14 @@ hr {
   width: 66%;
   color: white;
 }
+/* ANIMATION FOR PHOTOBAR ?? */
+/*.photobar:hover {
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  transform: translateX(left .5s);
+}*/
+
 .webbar {
   background-color: #CD2F3E;
   padding: 1%;
@@ -230,6 +238,19 @@ hr {
   width: 90%;
   color: white;
 }
+
+.layoutbar {
+  background-color: #CD2F3E;
+  padding: 1%;
+  text-align: right;
+  font-family: futura-pt,sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  border-radius: 3px;
+  width: 85%;
+  color: white;
+}
 /*Progress Bar Styling End*/
 
 /*Accolade Styling*/
@@ -237,7 +258,7 @@ hr {
   height: 95px;
   display: flex;
   width: 90%;
-  background-color: #aaa;
+  background-color: rgb(107, 107, 107);
   margin-left: 50px;
   margin-top: 50px;
   margin-bottom: 20px;
@@ -260,6 +281,7 @@ hr {
   border-right: none;
 }
 
+/* Button2 Styling */
 .resume2 {
   border: none;
   padding: 12px 22px;
@@ -275,4 +297,66 @@ hr {
 .resume2:hover {
   background-color: rgb(207,45,62);
   color: white;
+}
+
+/* Donation Section */
+.support {
+  padding: 12px 32px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 20px;
+  color: rgb(107, 107, 107);
+}
+
+.cash, .paypal {
+  width: 300px;
+  height: 300px;
+}
+
+/*#capp, #ppal {}*/
+
+.doughnate a {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+/* End of Donation Section */
+
+
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    display: block;
+  }
+
+  .fixed {
+  /*  **ASK BRANDON TO CHECK THIS SECTION**
+  display: flex;
+  flex: 50%;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(portfolioImages/Alex_face.jpeg);*/
+
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .accolades {
+   display: block;
+   height: 20vh;
+ }
+
+ .accolades p {
+   padding: 10px;
+   font-size: 20px;
+   border: none;
+ }
 }

@@ -332,13 +332,13 @@ hr {
   }
 
   .fixed {
-  /*  **ASK BRANDON TO CHECK THIS SECTION**
+  /*  **ASK BRANDON TO CHECK THIS SECTION**/
   display: flex;
-  flex: 50%;
+  flex: 100%;
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url(portfolioImages/Alex_face.jpeg);*/
+  background-image: url(portfolioImages/Alex_face.jpeg);
 
   min-height: 100%;
   background-attachment: fixed;

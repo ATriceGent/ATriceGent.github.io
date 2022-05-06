@@ -327,9 +327,9 @@ hr {
 
 
 @media screen and (max-width: 600px) {
-  /*.flex-container {
+  .flex-container {
     display: block;
-  }*/
+  }
 
   .fixed {
   /*  **ASK BRANDON TO CHECK THIS SECTION**
@@ -339,20 +339,14 @@ hr {
   width: 100vw;
   height: 100vh;
   background-image: url(portfolioImages/Alex_face.jpeg);*/
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: contain;
-  background-size: contain;
-  -webkit-flex: 0 0 100%;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100;
+  display: block;
   min-height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  justify-content: center;
-  align-items: center;
+  /*justify-content: center;
+  align-items: center;*/
  }
 
  .accolades {

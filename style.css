@@ -339,9 +339,13 @@ hr {
   width: 100vw;
   height: 100vh;
   */
+
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   background-image: url(portfolioImages/Alex_face.jpeg);
   min-height: 100%;
   background-attachment: fixed;

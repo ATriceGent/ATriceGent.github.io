@@ -337,11 +337,8 @@ hr {
   flex: 50%;
   */
 
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex: 50%;
-  position: relative;
+  display: block;
+  position: static;
   width: 100vw;
   height: 100vh;
   min-height: 100%;

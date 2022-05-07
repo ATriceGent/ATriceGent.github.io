@@ -356,6 +356,12 @@ hr {
     align-items: center;
   }
 
+  .content {
+    overflow: auto;
+    flex: none;
+    background-color: rgb(237, 237, 237);
+  }
+
  .accolades {
    display: block;
    height: 20vh;

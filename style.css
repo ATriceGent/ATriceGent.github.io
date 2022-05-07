@@ -335,9 +335,6 @@ hr {
   /*  **ASK BRANDON TO CHECK THIS SECTION**
   display: flex;
   flex: 50%;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
   */
 
   display: -webkit-flex;

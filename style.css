@@ -358,7 +358,7 @@ hr {
 
   .content {
     overflow: auto;
-    flex: none;
+    flex: 0 0 100%;
     background-color: rgb(237, 237, 237);
   }
 

@@ -348,6 +348,7 @@ hr {
   background-size: contain;
   justify-content: center;
   align-items: center;
+  overflow: scroll;
  }
 
  .accolades {

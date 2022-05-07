@@ -26,6 +26,9 @@ h1 {
 
 /*Fixed Image Column Styling*/
 .fixed {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
   background-image: url(portfolioImages/Alex_face.jpeg);
   background-position: center;
   background-repeat: no-repeat;
@@ -328,25 +331,30 @@ hr {
 
 @media screen and (max-width: 600px) {
   .flex-container {
-    display: block;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .fixed {
-  /*  **ASK BRANDON TO CHECK THIS SECTION**
-  display: flex;
-  flex: 50%;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(portfolioImages/Alex_face.jpeg);*/
-  display: block;
-  min-height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  align-items: center;
- }
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
 
  .accolades {
    display: block;

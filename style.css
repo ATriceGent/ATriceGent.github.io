@@ -332,20 +332,19 @@ hr {
   }
 
   .fixed {
-  /*  **ASK BRANDON TO CHECK THIS SECTION**/
+  /*  **ASK BRANDON TO CHECK THIS SECTION**
   display: flex;
-  flex: 100%;
+  flex: 50%;
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url(portfolioImages/Alex_face.jpeg);
-
+  background-image: url(portfolioImages/Alex_face.jpeg);*/
+  display: block;
   min-height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  justify-content: center;
   align-items: center;
  }
 

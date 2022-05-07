@@ -338,12 +338,12 @@ hr {
   */
 
   display: block;
-  position: static;
+  position: relative;
   width: 100vw;
   height: 100vh;
   min-height: 100%;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
   justify-content: center;

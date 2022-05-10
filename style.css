@@ -314,10 +314,16 @@ hr {
   font-weight: 500;
   font-style: italic;
   margin-bottom: 80px;
+  text-align: center;
 }
 
 .dnld {
   text-align: center;
+}
+
+.cbDownload {
+  text-decoration: none;
+  color: rgb(207,92,120);
 }
 
 .cbDownload img{

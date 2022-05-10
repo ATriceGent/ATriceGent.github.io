@@ -384,8 +384,8 @@ footer {
 
   /*Instagram QR Code Styling*/
     background-image: url(assets/atrice_gent_qr-2.png);
-    -webkit-background-size: 26%;
-    background-size: 26%;
+    -webkit-background-size: 23%;
+    background-size: 23%;
     background-repeat: no-repeat;
     background-position: right;
 }

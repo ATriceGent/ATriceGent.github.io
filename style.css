@@ -138,6 +138,14 @@ hr {
   transform-origin: left;
 }
 
+.beads {
+  margin-top: 10%;
+}
+
+.sDrip {
+  margin-top: 25%;
+}
+
 .logo {
   padding-top: 33.69%;
   padding-bottom: 33.69%;
@@ -163,7 +171,7 @@ hr {
   font-weight: 700;
   font-style: italic;
   font-size: 18px;
-  color: rgb(207,92,120)
+  color: rgb(207,92,120);
 }
 
 /*Skills Spacing*/
@@ -299,6 +307,39 @@ hr {
   color: white;
 }
 
+/*Creative Brief Section*/
+
+.creativ {
+  font-family: futura-pt,sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 80px;
+}
+
+.dnld {
+  text-align: center;
+}
+
+.cbDownload img{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: auto;
+  width: 45vw;
+}
+
+.cbDownload img:hover {
+  transform: scale(0.96);
+  transition: 0.6s;
+  box-shadow: 2px 6px 16px 12px rgba(77, 77, 77, 0.4);
+
+}
+
+.cBrief p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 /* Donation Section */
 .support {
   padding: 12px 32px;
@@ -323,6 +364,58 @@ hr {
   justify-content: center;
 }
 /* End of Donation Section */
+
+
+/*Footer Section*/
+
+footer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  height: 196px;
+
+  /*Instagram QR Code Styling*/
+    background-image: url(assets/atrice_gent_qr-2.png);
+    -webkit-background-size: 26%;
+    background-size: 26%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.foot a {
+  text-decoration: none;
+  color: rgb(77, 77, 77);
+  font-family: futura-pt,sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.foot a:hover {
+  color: rgb(207,92,120);
+}
+
+.insta {
+}
+
+.email {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.phone {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
 
 
 

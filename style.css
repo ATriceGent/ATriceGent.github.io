@@ -316,17 +316,10 @@ hr {
   margin-bottom: 80px;
 }
 
-.cBrief h2 {
-  text-align: left;
-}
-
 .cBrief {
   text-align: center;
 }
 
-.cBrief p {
-  margin: 25px;
-}
 
 .cbDownload {
   text-decoration: none;
@@ -350,7 +343,7 @@ hr {
 
 .cBrief p {
   text-align: center;
-  margin-bottom: 25px;
+  margin: 25px;
 }
 
 /* Donation Section */

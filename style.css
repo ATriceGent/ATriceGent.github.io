@@ -321,6 +321,10 @@ hr {
   text-align: center;
 }
 
+.cBrief p {
+  margin: 25px;
+}
+
 .cbDownload {
   text-decoration: none;
   color: rgb(207,92,120);

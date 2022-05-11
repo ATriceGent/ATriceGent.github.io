@@ -425,7 +425,7 @@ footer {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .flex-container {
     display: block;
   }
@@ -438,8 +438,8 @@ footer {
 
   position: relative;
   top: 0;
-  min-height: 100%;
-  margin-top: 32px;
+  height: 100%;
+  margin-top: 64px;
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;

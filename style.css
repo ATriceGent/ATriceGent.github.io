@@ -431,21 +431,32 @@ footer {
   }
 
   .fixed {
-  /*  **ASK BRANDON TO CHECK THIS SECTION**
-  display: flex;
-  flex: 50%;
-  */
-
   position: relative;
   top: 0;
   height: 100%;
-  margin-top: 64px;
+  margin-top: 96px;
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
-  overflow: hidden;
+  overflow: scroll;
  }
+
+ /* .fixed {
+   display: flex;
+ /*   flex: 50%; */
+ /*   position: relative; *
+   width: 100vw;
+   height: 100vh;
+   background-image: url(https://libertywalk.co.jp/wp-content/uploads/slider49/ LBWORKS_NISSAN_GT-R_TYPE2_110.jpeg);
+   min-height: 100%;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   justify-content: center;
+   align-items: center;
+  }  */
 
  .accolades {
    display: block;
@@ -457,4 +468,6 @@ footer {
    font-size: 20px;
    border: none;
  }
+
+
 }

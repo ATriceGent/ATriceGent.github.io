@@ -439,7 +439,7 @@ footer {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
-  overflow: scroll;
+  overflow: hidden;
  }
 
  /* .fixed {
@@ -457,6 +457,7 @@ footer {
    justify-content: center;
    align-items: center;
   }  */
+
 
  .accolades {
    display: block;

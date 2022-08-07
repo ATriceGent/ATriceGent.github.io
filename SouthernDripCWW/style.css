@@ -1,23 +1,28 @@
 * {
   margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #E0E0D1;
+  margin: 0;
+  padding: 0;
 }
 
 .flex-container {
   display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #E0E0D1;
+  width: 100%;
 }
 
-header {/* **TEST** */
+header {
   text-align: center;
+  width: 100%;
   height: 70%;
   background-color: #E0E0D1;
   padding-bottom: 40px;
@@ -25,22 +30,11 @@ header {/* **TEST** */
 }
 
 .logo {
-  -ms-align-items: center;
   align-items: center;
   width: 60%;
   padding-top: 64px;
   padding-bottom: 32px;
 }
-
-
-
-/*h1 {
-  font-family: contralto-big,sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  color: #2B2A28;
-  padding-top: 32px;
-}*/
 
 h2 {
   font-family: contralto-big,sans-serif;
@@ -61,16 +55,13 @@ h3 {
 
 .navbar {
   display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
   background-color: #2B2A28;
-  /*overflow: auto;
-  text-align: center;*/
+  overflow: auto;
 }
 
 .navbar a {
@@ -84,18 +75,6 @@ h3 {
   font-size: 17px;
 }
 
-/*.navbar a:first-child  {
-  border-radius: 50% 0% 0% 50%;
-}
-
-.navbar a:nth-child(2):hover, .navbar a:nth-child(3):hover {
-  border-radius: 0;
-}
-
-.navbar a:last-child  {
-  border-radius: 0% 50% 50% 0%;
-}*/
-
 .navbar a:hover {
   background-color: #A5967C;
   color: #2B2A28;
@@ -106,7 +85,7 @@ h3 {
   color: #BFB29F;
 }
 
-section {/* **TEST** */
+section {
   font-family: calder-lc,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -128,15 +107,13 @@ section {/* **TEST** */
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
-/* *SET VIEW HEIGHT OF EACH SECTION* ***TEST*** POSSIBLE RESPONSIVE SOLUTION (SEE MEDIA QUERY)  I don't think this is the solution*/
+  width: 100%;
 }
 
 .gallery {
   display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
   font-family: calder-lc,sans-serif;
   font-weight: 400;
@@ -149,35 +126,32 @@ section {/* **TEST** */
 }
 
 article {
-  width: 32%;
+  width: 33%;
   height: 200px;
   color: #E0E0D1;
-  /*background-color: #2B2A28;*/
-  margin: 2px;
   padding-left: 6px;
-  margin-right: 0;
   border-radius: 6px;
 }
 
-/**/.tables{
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-background-image: url(assets/tableTemp.png);
+.tables{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(assets/tableTemp.png);
 }
 
-/**/.wallart {
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-background-image: url(assets/wallArt.png);
+.wallart {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(assets/wallArt.png);
 }
 
-/**/.accessories {
-background-position: 0px -75px;
-background-size: cover;
-background-repeat: no-repeat;
-background-image: url(assets/accessories.png);
+.accessories {
+  background-position: 0px -75px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(assets/accessories.png);
 }
 
 .services {
@@ -185,6 +159,7 @@ background-image: url(assets/accessories.png);
 }
 
 .break {
+  display: -webkit-flex;
   display: flex;
   background-color: #E0E0D1;
   width: 100%;
@@ -192,27 +167,21 @@ background-image: url(assets/accessories.png);
 
 .pgbreak {
   justify-content: space-around;
-  position: relative;
   width: 99%;
 }
 
 .pgbreak2 {
   justify-content: space-around;
-  position: relative;
   width: 99%;
-  /*position: relative;
-  width: 96vw;*/
-  padding-top: 230px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 footer {
   display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-align-items: center;
   align-items: center;
   width: 100%;
   padding-top: 32px;
@@ -260,109 +229,97 @@ footer {
 
 
 @media screen and (max-width: 703px) {
-  header {
-  }
 
-  .logo {
-    width: 86%;
-  }
+.logo {
+  width: 86%;
+}
 
-  h3 {
-    font-size: 18pt;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 32px;
-  }
+h3 {
+  font-size: 18pt;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 32px;
+}
 
-  .navbar {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 32px;
-  }
+.navbar {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 32px;
+}
 
-  .navbar a {
-    text-align: left;
-    padding: 32px 32px 32px 32px;
-    border-bottom: 1px solid  #E0E0D1;
-  }
+.navbar a {
+  text-align: left;
+  padding: 32px 32px 32px 32px;
+  border-bottom: 1px solid  #E0E0D1;
+}
 
-  .navbar a:hover {
-    padding: 32px 32px 32px 32px;
-    box-shadow: 0px 12px 14px 0px rgba(224, 224, 209, 0.27);
-  }
+.navbar a:hover {
+  padding: 32px 32px 32px 32px;
+  box-shadow: 0px 12px 14px 0px rgba(224, 224, 209, 0.27);
+}
 
-  .navbar a:last-child:hover {
-    padding: 32px 32px 32px 32px;
-    box-shadow: 0px 0px 14px 12px rgba(224, 224, 209, 0.27);
-  }
+.navbar a:last-child:hover {
+  padding: 32px 32px 32px 32px;
+  box-shadow: 0px 0px 14px 12px rgba(224, 224, 209, 0.27);
+}
 
-  .logo {
-    padding: 64px 32px 32px 32px;
-  }
+.logo {
+  padding: 64px 32px 32px 32px;
+}
 
-  .content {
-    height: 45vh;
-  }/* ***TESt*** */
+.pgbreak {
+}
 
-  .break {
-    padding-top: 128px;
-  }
+.pgbreak2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
-  .pgbreak2 {
-    top: 160px;
-    padding-top: 420px;
-    padding-bottom: 64px;
-  /*How I got the secong page break to display properly at small screen size*/
-  }
+p {
+  font-size: 14pt;
+}
 
-  p {
-    font-size: 14pt;
-  }
+.about {
+  text-align: left;
+  padding: 46px;
+}
 
-  .about {
-    text-align: left;
-    padding: 46px;
-  }
+.services {
+  text-align: left;
+  padding: 46px;
+}
 
-  .services {
-    text-align: left;
-    padding: 46px;
-  }
+.gallery {
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
 
-  .gallery {
-    -ms-align-items: center;
-    align-items: center;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
+.tables {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 76%;
+}
 
-  .tables {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 76%;
-  }
+.wallart {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 76%;
+}
 
-  .wallart {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 76%;
-  }
-
-  .accessories {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 76%;
-  }
+.accessories {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 76%;
+}
 
 footer {
-  padding-top: 128px;
+  padding-top: 32px;
 }
 
 .links {
@@ -373,7 +330,5 @@ footer {
 .LLC {
   padding: 32px 0 64px 0;
 }
-
-
 
 }

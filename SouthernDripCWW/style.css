@@ -258,14 +258,13 @@ footer {
 
   .logo {
     width: 89%;
-    padding-top: ;
-    padding-bottom: ;
   }
 
   h3 {
     font-size: 18pt;
     padding-top: 12px;
-    padding-bottom: 144px;
+    padding-bottom: 12px;
+    margin-bottom: 70px;
   }
 
   .navbar {
@@ -273,6 +272,7 @@ footer {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
+    margin-top: 70px;
   }
 
   .navbar a {

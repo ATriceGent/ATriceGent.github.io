@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+body {
+  background-color: #E0E0D1;
+}
+
 .flex-container {
   display: -webkit-flex;
   display: -ms-flex;
@@ -21,6 +25,8 @@ header {/* **TEST** */
 }
 
 .logo {
+  -ms-align-items: center;
+  align-items: center;
   width: 60%;
   padding-top: 64px;
   padding-bottom: 32px;
@@ -258,7 +264,7 @@ footer {
   }
 
   .logo {
-    width: 89%;
+    width: 86%;
   }
 
   h3 {

@@ -265,7 +265,7 @@ footer {
     font-size: 18pt;
     padding-top: 12px;
     padding-bottom: 12px;
-    margin-bottom: 70px;
+    margin-bottom: 48px;
   }
 
   .navbar {
@@ -273,7 +273,7 @@ footer {
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 48px;
   }
 
   .navbar a {

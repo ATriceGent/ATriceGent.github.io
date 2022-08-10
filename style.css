@@ -22,6 +22,8 @@ h1 {
   display: -ms-flex;
   display: flex;
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 /*Fixed Image Column Styling*/
@@ -426,6 +428,7 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
+
   .flex-container {
     display: block;
   }

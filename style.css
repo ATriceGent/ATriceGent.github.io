@@ -1,10 +1,11 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
   background-color: #CD2F3E;
 }
 
@@ -426,6 +427,7 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
+
   .flex-container {
     display: block;
   }
@@ -434,7 +436,6 @@ footer {
   position: relative;
   top: 0;
   height: 100%;
-  margin-top: 32px;
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;

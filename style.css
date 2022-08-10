@@ -21,9 +21,9 @@ h1 {
 /*Styling for main container*/
 .flex-container {
   display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
   height: 100vh;
-  width: 100vw;
 }
 
 /*Fixed Image Column Styling*/
@@ -33,8 +33,9 @@ h1 {
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
-  -webkit-flex: 0 0 70%;
-  flex: 0 0 70%;
+  -webkit-flex: 0 0 40%;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
 }
 
 /*Content Styling Scroll*/
@@ -428,26 +429,20 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .flex-container {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    display: block;
   }
 
   .fixed {
+  position: relative;
   top: 0;
-  height: 100vh;
+  height: 100%;
+  margin-top: 32px;
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
  }
-
- .content {
-   position: relative;
-   overflow: visible;
- }
-
 
  /* .fixed {
    display: flex;
